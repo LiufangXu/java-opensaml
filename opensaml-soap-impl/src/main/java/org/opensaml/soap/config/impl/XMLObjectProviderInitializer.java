@@ -26,12 +26,12 @@ public class XMLObjectProviderInitializer extends AbstractXMLObjectProviderIniti
     
     /** Config resources. */
     private static String[] configs = {
-        "/soap11-config.xml", 
-        "/wsaddressing-config.xml",
-        "/wsfed11-protocol-config.xml",
-        "/wspolicy-config.xml",
-        "/wssecurity-config.xml",
-        "/wstrust-config.xml",
+        "/v3/soap11-config.xml", 
+        "/v3/wsaddressing-config.xml",
+        "/v3/wsfed11-protocol-config.xml",
+        "/v3/wspolicy-config.xml",
+        "/v3/wssecurity-config.xml",
+        "/v3/wstrust-config.xml",
         };
 
     /** {@inheritDoc} */

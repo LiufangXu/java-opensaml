@@ -70,7 +70,7 @@ public class XMLConfigurator {
     @Nonnull @NotEmpty public static final String XMLTOOLING_DEFAULT_OBJECT_PROVIDER = "DEFAULT";
 
     /** Location, on the classpath, of the XMLTooling configuration schema. */
-    @Nonnull @NotEmpty public static final String XMLTOOLING_SCHEMA_LOCATION = "/schema/xmltooling-config.xsd";
+    @Nonnull @NotEmpty public static final String XMLTOOLING_SCHEMA_LOCATION = "/v3/schema/xmltooling-config.xsd";
 
     /** Class logger. */
     @Nonnull private final Logger log = LoggerFactory.getLogger(XMLConfigurator.class);

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:XMLDSig" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:XMLDSig" finalDefault="extension" blockDefault="substitution" version="2.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:PGP" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:PGP" finalDefault="extension" blockDefault="substitution" version="2.0">
 
-    <xs:redefine schemaLocation="classpath:/schema/saml-schema-authn-context-types-2.0.xsd">
+    <xs:redefine schemaLocation="classpath:/v3/schema/saml-schema-authn-context-types-2.0.xsd">
 
         <xs:annotation>
             <xs:documentation>
-                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:XMLDSig Document identifier:
-                saml-schema-authn-context-xmldsig-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision
+                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:PGP Document identifier:
+                saml-schema-authn-context-pgp-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision
                 history: V2.0 (March, 2005): New authentication context class schema for SAML V2.0.
             </xs:documentation>
         </xs:annotation>
@@ -64,7 +64,7 @@
         <xs:complexType name="PublicKeyType">
             <xs:complexContent>
                 <xs:restriction base="PublicKeyType">
-                    <xs:attribute name="keyValidation" type="xs:anyURI" fixed="urn:ietf:rfc:3075"/>
+                    <xs:attribute name="keyValidation" fixed="urn:oasis:names:tc:SAML:2.0:ac:classes:PGP"/>
                 </xs:restriction>
             </xs:complexContent>
         </xs:complexType>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:SoftwarePKI" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:SoftwarePKI" finalDefault="extension" blockDefault="substitution" version="2.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:SmartcardPKI" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:SmartcardPKI" finalDefault="extension" blockDefault="substitution" version="2.0">
 
-    <xs:redefine schemaLocation="classpath:/schema/saml-schema-authn-context-types-2.0.xsd">
+    <xs:redefine schemaLocation="classpath:/v3/schema/saml-schema-authn-context-types-2.0.xsd">
 
         <xs:annotation>
             <xs:documentation>
-                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:SoftwarePKI Document identifier:
-                saml-schema-authn-context-softwarepki-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/
+                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:SmartcardPKI Document identifier:
+                saml-schema-authn-context-smartcardpki-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/
                 Revision history: V2.0 (March, 2005): New authentication context class schema for SAML V2.0.
             </xs:documentation>
         </xs:annotation>
@@ -56,6 +56,7 @@
             <xs:complexContent>
                 <xs:restriction base="PrincipalAuthenticationMechanismType">
                     <xs:sequence>
+                        <xs:element ref="Smartcard"/>
                         <xs:element ref="ActivationPin"/>
                         <xs:element ref="Extension" minOccurs="0" maxOccurs="unbounded"/>
                     </xs:sequence>
@@ -95,7 +96,6 @@
                 <xs:restriction base="KeyActivationType">
                     <xs:sequence>
                         <xs:element ref="ActivationPin"/>
-                        <xs:element ref="Extension" minOccurs="0" maxOccurs="unbounded"/>
                     </xs:sequence>
                 </xs:restriction>
             </xs:complexContent>
@@ -107,7 +107,7 @@
                     <xs:attribute name="medium" use="required">
                         <xs:simpleType>
                             <xs:restriction base="mediumType">
-                                <xs:enumeration value="memory"/>
+                                <xs:enumeration value="smartcard"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:attribute>

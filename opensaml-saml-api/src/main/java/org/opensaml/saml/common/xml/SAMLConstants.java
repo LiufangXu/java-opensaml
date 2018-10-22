@@ -33,7 +33,7 @@ public final class SAMLConstants {
     // OpenSAML 2
     // ****************************
     /** Directory, on the classpath, schemas are located in. */
-    public static final String SCHEMA_DIR = "/schema/";
+    public static final String SCHEMA_DIR = "/v3/schema/";
 
     // ****************************
     // Core XML

@@ -9,6 +9,6 @@
         </xs:documentation>
     </xs:annotation>
 
-    <xs:include schemaLocation="classpath:/schema/saml-schema-authn-context-types-2.0.xsd"/>
+    <xs:include schemaLocation="classpath:/v3/schema/saml-schema-authn-context-types-2.0.xsd"/>
 
 </xs:schema>

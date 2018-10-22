@@ -26,8 +26,8 @@ public class XMLObjectProviderInitializer extends AbstractXMLObjectProviderIniti
     
     /** Config resources. */
     private static String[] configs = {
-        "/signature-config.xml",
-        "/encryption-config.xml", 
+        "/v3/signature-config.xml",
+        "/v3/encryption-config.xml", 
         };
 
     /** {@inheritDoc} */

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient" finalDefault="extension" blockDefault="substitution" version="2.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:oasis:names:tc:SAML:2.0:ac:classes:X509" targetNamespace="urn:oasis:names:tc:SAML:2.0:ac:classes:X509" finalDefault="extension" blockDefault="substitution" version="2.0">
 
-    <xs:redefine schemaLocation="classpath:/schema/saml-schema-authn-context-types-2.0.xsd">
+    <xs:redefine schemaLocation="classpath:/v3/schema/saml-schema-authn-context-types-2.0.xsd">
 
         <xs:annotation>
             <xs:documentation>
-                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:TLSClient Document identifier:
-                saml-schema-authn-context-sslcert-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision
+                Class identifier: urn:oasis:names:tc:SAML:2.0:ac:classes:X509 Document identifier:
+                saml-schema-authn-context-x509-2.0 Location: http://docs.oasis-open.org/security/saml/v2.0/ Revision
                 history: V2.0 (March, 2005): New authentication context class schema for SAML V2.0.
             </xs:documentation>
         </xs:annotation>
@@ -65,20 +65,6 @@
             <xs:complexContent>
                 <xs:restriction base="PublicKeyType">
                     <xs:attribute name="keyValidation" type="xs:anyURI" fixed="urn:oasis:names:tc:SAML:2.0:ac:classes:X509"/>
-                </xs:restriction>
-            </xs:complexContent>
-        </xs:complexType>
-
-        <xs:complexType name="AuthenticatorTransportProtocolType">
-            <xs:complexContent>
-                <xs:restriction base="AuthenticatorTransportProtocolType">
-                    <xs:sequence>
-                        <xs:choice>
-                            <xs:element ref="SSL"/>
-                            <xs:element ref="WTLS"/>
-                        </xs:choice>
-                        <xs:element ref="Extension" minOccurs="0" maxOccurs="unbounded"/>
-                    </xs:sequence>
                 </xs:restriction>
             </xs:complexContent>
         </xs:complexType>

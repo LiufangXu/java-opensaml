@@ -51,7 +51,7 @@ public interface Credential {
      * Gets key names for this credential. These names may be used to reference a key(s) exchanged 
      * through an out-of-band agreement. Implementations may or may not implement means to resolve 
      * these names into keys retrievable through the {@link #getPublicKey()}, {@link #getPrivateKey()} 
-     * or {@link #getSecretKey()} methods.
+     * or {@link #getSecretKey()} methods.BasicX509Credential
      * 
      * @return key names for this credential
      */
