@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        #parse ( "/templates/add-html-head-content.vm" )
+        #parse ( "/v3/templates/add-html-head-content.vm" )
     </head>
     <body onload="document.forms[0].submit()">
         <noscript>
@@ -46,7 +46,7 @@
                 </div>
             </noscript>
         </form>
-        #parse ( "/templates/add-html-body-content.vm" )
+        #parse ( "/V3/templates/add-html-body-content.vm" )
         
     </body>
 </html>
