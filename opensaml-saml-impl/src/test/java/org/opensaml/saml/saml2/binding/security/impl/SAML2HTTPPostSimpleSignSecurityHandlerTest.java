@@ -371,7 +371,7 @@ public class SAML2HTTPPostSimpleSignSecurityHandlerTest extends XMLObjectBaseTes
         encoder.setHttpServletResponse(response);
         
         encoder.setVelocityEngine(velocityEngine);
-        encoder.setVelocityTemplateId("/templates/saml2-post-simplesign-binding.vm");
+        encoder.setVelocityTemplateId("/v3/templates/saml2-post-simplesign-binding.vm");
         
         try {
             encoder.initialize();

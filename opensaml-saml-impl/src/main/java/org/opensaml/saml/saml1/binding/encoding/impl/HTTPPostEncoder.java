@@ -46,7 +46,7 @@ import org.slf4j.LoggerFactory;
 public class HTTPPostEncoder extends BaseSAML1MessageEncoder {
     
     /** Default template ID. */
-    public static final String DEFAULT_TEMPLATE_ID = "/templates/saml1-post-binding.vm";
+    public static final String DEFAULT_TEMPLATE_ID = "/v3/templates/saml1-post-binding.vm";
 
     /** Class logger. */
     private final Logger log = LoggerFactory.getLogger(HTTPPostEncoder.class);

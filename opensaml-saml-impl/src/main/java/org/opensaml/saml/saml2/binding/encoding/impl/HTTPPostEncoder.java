@@ -49,7 +49,7 @@ import org.w3c.dom.Element;
 public class HTTPPostEncoder extends BaseSAML2MessageEncoder {
     
     /** Default template ID. */
-    public static final String DEFAULT_TEMPLATE_ID = "/templates/saml2-post-binding.vm";
+    public static final String DEFAULT_TEMPLATE_ID = "/v3/templates/saml2-post-binding.vm";
 
     /** Class logger. */
     private final Logger log = LoggerFactory.getLogger(HTTPPostEncoder.class);

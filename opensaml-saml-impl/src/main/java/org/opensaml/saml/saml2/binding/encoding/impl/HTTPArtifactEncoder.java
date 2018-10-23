@@ -61,7 +61,7 @@ import org.slf4j.LoggerFactory;
 public class HTTPArtifactEncoder extends BaseSAML2MessageEncoder {
     
     /** Default template ID. */
-    @Nonnull @NotEmpty public static final String DEFAULT_TEMPLATE_ID = "/templates/saml2-post-artifact-binding.vm";
+    @Nonnull @NotEmpty public static final String DEFAULT_TEMPLATE_ID = "/v3/templates/saml2-post-artifact-binding.vm";
 
     /** Class logger. */
     @Nonnull private final Logger log = LoggerFactory.getLogger(HTTPArtifactEncoder.class);

@@ -50,7 +50,7 @@ import com.google.common.base.Strings;
 public class HTTPPostSimpleSignEncoder extends HTTPPostEncoder {
     
     /** Default template ID. */
-    public static final String DEFAULT_TEMPLATE_ID = "/templates/saml2-post-simplesign-binding.vm";
+    public static final String DEFAULT_TEMPLATE_ID = "/v3/templates/saml2-post-simplesign-binding.vm";
 
     /** Class logger. */
     private final Logger log = LoggerFactory.getLogger(HTTPPostSimpleSignEncoder.class);
