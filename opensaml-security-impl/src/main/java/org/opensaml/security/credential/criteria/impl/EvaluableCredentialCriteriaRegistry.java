@@ -49,7 +49,7 @@ public final class EvaluableCredentialCriteriaRegistry {
      * Properties file storing default mappings from criteria to evaluable credential criteria. Will be loaded as a
      * resource stream relative to this class.
      */
-    public static final String DEFAULT_MAPPINGS_FILE = "/credential-criteria-registry.properties";
+    public static final String DEFAULT_MAPPINGS_FILE = "/v3/credential-criteria-registry.properties";
 
     /** Storage for the registry mappings. */
     private static Map<Class<? extends Criterion>, Class<? extends EvaluableCredentialCriterion>> registry;
